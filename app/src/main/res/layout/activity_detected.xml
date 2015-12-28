@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="16dp"
+    tools:context="com.sd.intrusiondetection.Alert"
+    android:background="#f9fcfc"
+    android:visibility="visible">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="     Intrusion Detected  "
+        android:id="@+id/textView"
+        android:textSize="30dp"
+        android:textColor="#fbf8f8"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="75dp"
+        android:layout_alignParentRight="true"
+        android:background="#425df5"
+        android:layout_marginRight="0dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="      Sending alerts...               "
+        android:id="@+id/textView2"
+        android:textSize="30dp"
+        android:textColor="#fbf9f9"
+        android:background="#425df5"
+        android:autoText="false"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="      Recording video          "
+        android:id="@+id/textView3"
+        android:textSize="30dp"
+        android:textColor="#fbf9f9"
+        android:background="#425df5"
+        android:autoText="false"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/textView2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restart"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp"
+        android:textSize="30dp"
+        android:background="#f1aa4d"
+        android:textColor="#0a35f7" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+        android:checked="true"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentLeft="true" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:max="10"
+        android:progress="2"
+        android:indeterminate="true"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/checkBox"
+        android:layout_alignBottom="@+id/textView2"
+        android:indeterminateBehavior="cycle"
+        android:foreground="#4fb4dc" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar2"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="28dp"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:background="#3fa5e9"
+        android:indeterminate="true"
+        android:max="10"
+        android:progress="4"
+        android:indeterminateOnly="false"
+        android:indeterminateDuration="10" />
+
+</RelativeLayout>

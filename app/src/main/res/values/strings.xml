@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">IntrusionDetection</string>
+    <string name="activity_name">Intrusion Detected</string>
+</resources>
